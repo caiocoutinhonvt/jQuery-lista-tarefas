@@ -31,12 +31,17 @@
         });
 
         $('ul').on('click','.bi-trash', function(){
-            $(this).parent('li').fadeOut(200);
+
+            $(this).parent('li').fadeOut(200, function(){
+                $(this).remove()
+            });
+            
         });
 
         $('ul').on('click','.bi-check-circle', function(){
-            $(this).parent('li').attr('class', 'checked')
+            $(this).parent('li').toggleClass('checked')
         });
+
     </script>
 
 </body>

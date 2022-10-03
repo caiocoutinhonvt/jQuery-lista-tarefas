@@ -75,3 +75,9 @@ ul .checked{
     text-decoration: line-through;
     transition: .2s;
 }
+
+ul .secondclick{
+    background: rgb(253, 152, 0);
+    text-decoration: line-through;
+    transition: .2s;
+}
